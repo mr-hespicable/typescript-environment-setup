@@ -7,4 +7,4 @@ run the commands
 git clone https://github.com/mr-hespicable/typescript-environment-setup/ .
 python3 setupEnviroTS.py
 ```
-you may have to run the command `rm -rf .DS_Store` if you are using a mac
+if you get the error `fatal: destination path '.' already exists and is not an empty directory.`, run the command `sudo rm -rf {*,.*}` to delete all files in the directory, and try again.
