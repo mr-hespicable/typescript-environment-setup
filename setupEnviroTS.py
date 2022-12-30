@@ -1,5 +1,4 @@
 import os
-import time
 
 path = input('Where would you like the project to be created?\n')
 name = input('What would you like the project to be called?\n')
