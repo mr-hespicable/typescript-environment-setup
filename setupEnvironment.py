@@ -20,6 +20,8 @@ os.system('clear')
 os.system(f'{dir} npx tsc test.ts && node test.js')
 os.system(f'{dir} rm -rf test.ts && rm -rf test.js')
 
+#making github repo
+#os.system(f'git init {name}')
 
 
 
