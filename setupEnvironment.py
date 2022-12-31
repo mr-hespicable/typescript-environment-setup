@@ -1,8 +1,10 @@
 import os
 
+os.system('git init')
+
 os.system(f'npm init -y && npm i typescript --save-dev && npm i @types/node && npx tsc && npx tsc --init') #setting up intial environment
 
-with open(f'tsconfig.json', 'a') as secondfile:
+with open(f'tsconfig.json', 'a') as secondfile: #sets up tsconfig.json
       secondfile.write("""
 {
   "compilerOptions": {
@@ -103,23 +105,20 @@ with open(f'tsconfig.json', 'a') as secondfile:
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
 
     /* Completeness */
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+    // "skipDefaultLibCheck": true,                       /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }
 }
 """)
-  
+
 os.system(f' touch test.ts') #creating test file
 with open(f'test.ts', 'w+') as g:
     g.write('console.log(\'<<<<ENVIRONMENT SETUP SUCCESSFUL>>>>\')')
 
-os.system('clear')
+os.system('clear') #running test file to check that the environment has been setup correctly
 os.system(f' npx tsc test.ts && node test.js')
 os.system(f' rm -rf test.ts && rm -rf test.js')
 
-
-
-
-
-
-
+#pushing files to github repo
+os.system('git add --all')
+os.system('git commit -m "initial commit"')
