@@ -111,7 +111,7 @@ with open(f'tsconfig.json', 'a') as secondfile: #sets up tsconfig.json
 }
 """)
 
-os.system(f' touch test.ts') #creating test file
+os.system(f'touch test.ts') #creating test file
 with open(f'test.ts', 'w+') as g:
     g.write('console.log(\'<<<<ENVIRONMENT SETUP SUCCESSFUL>>>>\')')
 
