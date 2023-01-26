@@ -1,5 +1,5 @@
 # typescript-environment-setup
-python file which sets up a typescript environment on UNIX systems (windows coming in 3-5 buisness days)
+python file which sets up a typescript environment on UNIX systems (windows coming in 3-5 business days)
 
 ### How to use:
 run the commands
